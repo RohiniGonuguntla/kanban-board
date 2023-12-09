@@ -1,0 +1,101 @@
+.group-container {
+    display: flex;
+    background-color: #f2f9fc;
+  }
+  
+  .status-image-container,
+  .user-initial-container,
+  .priority-info-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .options {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .status-image {
+    margin-right: 10px;
+  }
+  
+  .status-name,
+  .priority-name,
+  .user-name {
+    margin-right: 10px;
+  }
+  
+  .priority-image {
+    margin-right: 10px;
+  }
+  
+  .user-initial-circle {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff; /* Text color */
+    margin-right: 8px;
+  }
+  
+  .availability-dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #ffd600; /* Yellow color for availability dot */
+    margin-left: 4px;
+  }
+  
+  .user-name {
+    margin-right: 10px;
+  }
+  
+  .display {
+    color: #d7d8d9;
+  }
+  
+  .dis-btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .dis-cont {
+    background-color: #ffffff;
+    border-color: #e8e9ec;
+    border-style: solid;
+    border-radius: 10px;
+  }
+  
+  .dis-img {
+    width: 20px;
+    height: 20px;
+  }
+  
+  /* Media query for screens smaller than 600px */
+  @media only screen and (max-width: 600px) {
+    .group-container {
+      flex-direction: column; /* Change to column layout on smaller screens */
+    }
+  
+    .status-image-container,
+    .user-initial-container,
+    .priority-info-container {
+      flex-direction: column; /* Change to column layout on smaller screens */
+      align-items: flex-start; /* Align items to the start on smaller screens */
+    }
+  
+    .status-name,
+    .priority-name,
+    .user-name {
+      margin-right: 0; /* Remove right margin on smaller screens */
+      margin-bottom: 8px; /* Add bottom margin for spacing */
+    }
+  }
+  

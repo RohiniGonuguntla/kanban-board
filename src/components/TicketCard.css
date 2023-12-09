@@ -1,0 +1,84 @@
+/* Default styles for the ticket card */
+.ticket-card {
+    display: flex;
+    flex-direction: row; /* Updated to column layout for smaller screens */
+    justify-content: space-between;
+    background-color: #fff;
+    width: 280px;
+    height: 180px;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 15px;
+  }
+  
+  .sub-ticket-card,
+  .sub-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .status-heading {
+    font-size: small;
+    font-family: Roboto;
+    margin-left: 10px;
+    color: #37393E;
+  }
+  
+  .user-initial-circle {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    /* Text color */
+    margin-right: 8px;
+  }
+  
+  .availability-dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #ffd600;
+    /* Yellow color for availability dot */
+    margin-left: 4px;
+  }
+  
+  .priority-image-container {
+    margin-right: 10px;
+  }
+  
+  .request-para {
+    color: #C1C3C6;
+    font-family: Roboto;
+    font-size: small;
+    display: flex;
+  }
+  
+  .status-id {
+    color: #999ca0;
+  }
+  
+  /* Media query for screens smaller than 600px */
+  @media only screen and (max-width: 600px) {
+    .ticket-card {
+      width: 100%; /* Take full width on smaller screens */
+      height: auto; /* Adjust height based on content */
+    }
+  
+    .sub-ticket-card,
+    .sub-card {
+      flex-direction: column; /* Change to column layout on smaller screens */
+    }
+  
+    .user-initial-circle {
+      margin-right: 0; /* Remove right margin on smaller screens */
+      margin-bottom: 8px; /* Add bottom margin for spacing */
+    }
+  }
+  
